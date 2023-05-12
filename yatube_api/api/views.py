@@ -3,7 +3,8 @@ from django.core.exceptions import PermissionDenied
 from rest_framework import mixins, permissions
 from rest_framework.pagination import LimitOffsetPagination
 from rest_framework.filters import SearchFilter
-from rest_framework.viewsets import ModelViewSet, ReadOnlyModelViewSet, GenericViewSet
+from rest_framework.viewsets import (ModelViewSet, ReadOnlyModelViewSet,
+                                     GenericViewSet)
 from posts.models import Follow, Group, Post, User, Comment
 from .permissions import OwnerOrReadOnly
 from .serializers import (CommentSerializer, FollowSerializer, GroupSerializer,
