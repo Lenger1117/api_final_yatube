@@ -71,6 +71,64 @@ http://127.0.0.1:8000/api/v1/posts/
 
 <table style="text-align:right">
   <tr>
+    <th>Ответ</th>
+  </tr>
+  <tr>
+    <td>
+      200 OK
+      <br><br>
+      [
+      <br>
+    {
+      <br>
+        "id": 1,
+      <br>
+        "author": "lady",
+      <br>
+        "text": "string",
+      <br>
+        "pub_date": "2023-05-16T15:42:11.134539Z",
+      <br>
+        "image": null,
+      <br>
+        "group": null
+      <br>
+    },
+      <br>
+    {
+      <br>
+        "id": 2,
+      <br>
+        "author": "lady",
+      <br>
+        "text": "string2",
+      <br>
+        "pub_date": "2023-05-16T15:50:17.318555Z",
+      <br>
+        "image": null,
+      <br>
+        "group": null
+      <br>
+    }
+      <br>
+]
+    </td>
+  </tr>
+</table>
+
+Получить определенный пост (GET):
+http://127.0.0.1:8000/api/v1/posts/1/
+
+Получить коментарии определенного поста (GET):
+http://127.0.0.1:8000/api/v1/posts/1/comments/
+
+Получить список всех групп (GET):
+http://127.0.0.1:8000/api/v1/groups/
+
+Создать новый пост (POST)(требуется аутентификация):
+http://127.0.0.1:8000/api/v1/posts/
+<table style="text-align:right">
+  <tr>
     <th>Запрос</th>
     <th>Ответ</th>
   </tr>
@@ -84,7 +142,7 @@ http://127.0.0.1:8000/api/v1/posts/
     </td>
     <td>
       201 Created
-      <br>
+      <br><br>
       {
       <br>
     "id": 1,
@@ -103,27 +161,3 @@ http://127.0.0.1:8000/api/v1/posts/
     </td>
   </tr>
 </table>
-
-Получить определенный пост (GET):
-http://127.0.0.1:8000/api/v1/posts/1/
-
-Получить коментарии определенного поста (GET):
-http://127.0.0.1:8000/api/v1/posts/1/comments/
-
-Получить список всех групп (GET):
-http://127.0.0.1:8000/api/v1/groups/
-
-Создать новый пост (POST)(требуется аутентификация):
-http://127.0.0.1:8000/api/v1/posts/
-<br>
-В body:
-<br>
-{
-<br>
-"text": "string",
-<br>
-"image": "string",
-<br>
-"group": 0
-<br>
-}
