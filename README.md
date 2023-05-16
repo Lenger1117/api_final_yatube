@@ -118,6 +118,32 @@ http://127.0.0.1:8000/api/v1/posts/
 
 Получить определенный пост (GET):
 http://127.0.0.1:8000/api/v1/posts/1/
+<table style="text-align:right">
+  <tr>
+    <th>Ответ</th>
+  </tr>
+  <tr>
+    <td>
+      200 OK
+      <br><br>
+      {
+      <br>
+    "id": 1,
+      <br>
+    "author": "lady",
+      <br>
+    "text": "string",
+      <br>
+    "pub_date": "2023-05-16T15:42:11.134539Z",
+      <br>
+    "image": null,
+      <br>
+    "group": null
+      <br>
+}
+    </td>
+  </tr>
+</table>
 
 Получить коментарии определенного поста (GET):
 http://127.0.0.1:8000/api/v1/posts/1/comments/
