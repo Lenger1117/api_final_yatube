@@ -69,6 +69,41 @@ python manage.py runserver
 Получить список всех постов (GET):
 http://127.0.0.1:8000/api/v1/posts/
 
+<table style="text-align:right">
+  <tr>
+    <th>Запрос</th>
+    <th>Ответ</th>
+  </tr>
+  <tr>
+    <td>
+      {
+      <br>
+      "text": "string"
+      <br>
+      }
+    </td>
+    <td>
+      201 Created
+      <br>
+      {
+      <br>
+    "id": 1,
+      <br>
+    "author": "author",
+      <br>
+    "text": "string",
+      <br>
+    "pub_date": "2023-05-16T15:42:11.134539Z",
+      <br>
+    "image": null,
+      <br>
+    "group": null
+      <br>
+      }
+    </td>
+  </tr>
+</table>
+
 Получить определенный пост (GET):
 http://127.0.0.1:8000/api/v1/posts/1/
 
