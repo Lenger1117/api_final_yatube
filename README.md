@@ -147,9 +147,93 @@ http://127.0.0.1:8000/api/v1/posts/1/
 
 Получить коментарии определенного поста (GET):
 http://127.0.0.1:8000/api/v1/posts/1/comments/
+<table style="text-align:right">
+  <tr>
+    <th>Ответ</th>
+  </tr>
+  <tr>
+    <td>
+      200 OK
+      <br><br>
+      [
+      <br>
+    {
+      <br>
+        "id": 1,
+      <br>
+        "author": "lady",
+      <br>
+        "post": 1,
+      <br>
+        "text": "комментарий",
+      <br>
+        "created": "2023-05-17T06:58:40.537162Z"
+      <br>
+    },
+      <br>
+    {
+      <br>
+        "id": 2,
+      <br>
+        "author": "lady",
+      <br>
+        "post": 1,
+      <br>
+        "text": "комментарий2",
+      <br>
+        "created": "2023-05-17T06:58:45.926544Z"
+      <br>
+    }
+      <br>
+]
+    </td>
+  </tr>
+</table>
 
 Получить список всех групп (GET):
 http://127.0.0.1:8000/api/v1/groups/
+<table style="text-align:right">
+  <tr>
+    <th>Ответ</th>
+  </tr>
+  <tr>
+    <td>
+      200 OK
+      <br><br>
+      [
+      <br>
+    {
+      <br>
+        "id": 1,
+      <br>
+        "author": "lady",
+      <br>
+        "post": 1,
+      <br>
+        "text": "комментарий",
+      <br>
+        "created": "2023-05-17T06:58:40.537162Z"
+      <br>
+    },
+      <br>
+    {
+      <br>
+        "id": 2,
+      <br>
+        "author": "lady",
+      <br>
+        "post": 1,
+      <br>
+        "text": "комментарий2",
+      <br>
+        "created": "2023-05-17T06:58:45.926544Z"
+      <br>
+    }
+      <br>
+]
+    </td>
+  </tr>
+</table>
 
 Создать новый пост (POST)(требуется аутентификация):
 http://127.0.0.1:8000/api/v1/posts/
