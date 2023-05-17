@@ -200,19 +200,17 @@ http://127.0.0.1:8000/api/v1/groups/
     <td>
       200 OK
       <br><br>
-      [
+     [
       <br>
     {
       <br>
         "id": 1,
       <br>
-        "author": "lady",
+        "title": "1",
       <br>
-        "post": 1,
+        "slug": "1",
       <br>
-        "text": "комментарий",
-      <br>
-        "created": "2023-05-17T06:58:40.537162Z"
+        "description": "1"
       <br>
     },
       <br>
@@ -220,13 +218,11 @@ http://127.0.0.1:8000/api/v1/groups/
       <br>
         "id": 2,
       <br>
-        "author": "lady",
+        "title": "2",
       <br>
-        "post": 1,
+        "slug": "2",
       <br>
-        "text": "комментарий2",
-      <br>
-        "created": "2023-05-17T06:58:45.926544Z"
+        "description": "2"
       <br>
     }
       <br>
