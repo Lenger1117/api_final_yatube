@@ -234,6 +234,7 @@ http://127.0.0.1:8000/api/v1/groups/
 Создать новый пост (POST)(требуется аутентификация):
 http://127.0.0.1:8000/api/v1/posts/
 <table style="text-align:right">
+  <pre>
   <tr>
     <th>Запрос</th>
     <th>Ответ</th>
@@ -266,4 +267,5 @@ http://127.0.0.1:8000/api/v1/posts/
       }
     </td>
   </tr>
+  </pre>
 </table>
